@@ -61,6 +61,21 @@ article blockquote{background:var(--card);border:1px solid var(--line);border-ra
 .pnav a{color:var(--accent)}
 .crumb{font-size:.82rem;color:var(--sub)}
 .crumb a:hover{color:var(--accent)}
+/* slide strips */
+.strip{margin:18px 0 8px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.striphead{font-size:.82rem;color:var(--accent);font-weight:600;margin-bottom:10px}
+.striphead span{color:var(--sub);font-weight:400}
+.striprow{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+.striprow img{height:118px;border-radius:8px;border:1px solid var(--line);cursor:zoom-in;flex:0 0 auto;scroll-snap-align:start;background:#eee}
+.striprow::-webkit-scrollbar{height:8px}
+.striprow::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+/* lightbox */
+#lbx{position:fixed;inset:0;background:rgba(20,22,18,.94);display:none;z-index:99;align-items:center;justify-content:center;flex-direction:column}
+#lbx.on{display:flex}
+#lbx img{max-width:96vw;max-height:86vh;border-radius:6px}
+#lbx .lbnav{color:#cfcabf;font-size:.9rem;margin-top:14px;display:flex;gap:26px;align-items:center;font-family:'Noto Sans KR',sans-serif}
+#lbx button{background:none;border:1px solid #5a5f55;color:#e8e4da;border-radius:8px;padding:6px 18px;font-size:1rem;cursor:pointer}
+#lbx button:hover{border-color:#a9b3a2}
 </style></head><body>
 <div class="top"><div class="topin">
 <a class="brand" href="">기록서재<small>LECTURE ARCHIVE</small></a>
